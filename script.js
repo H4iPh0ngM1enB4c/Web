@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(setRadioText, 500);
 
-    let a = new EventSource("https://api.zeno.fm/mounts/metadata/subscribe/fikggbpoi71vv");
+    let a = new EventSource("");
     a.onmessage = function(t) {
         let e = JSON.parse(t.data);
         if (e.streamTitle) {
