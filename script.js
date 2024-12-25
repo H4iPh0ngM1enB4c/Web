@@ -109,7 +109,8 @@ function setRadioText() {
         }
     }
     document.getElementById("radio-text-1").textContent = "🎵 S1ow's chill vibes " + mt;
-    document.getElementById("radio-text-2").textContent = radioPlayingSong;
+    document.getElementById("radio-text-2").textContent = "Instupendo - Comfort Chain🎧" + mt;
+    document.getElementById("radio-text-3").textContent = radioPlayingSong;
 }
 
 function getMutedStatus() {
@@ -134,7 +135,7 @@ function radiotoggle() {
         radioIsLoading = true;
         radio = new Audio('https://stream.zeno.fm/tnql3oa9ccgtv');
         radio.addEventListener("canplaythrough", (event) => {
-            radioIsLoading = false;
+            radioIsLoading = true;
         });
         radio.play();
         return;
